@@ -16,7 +16,7 @@
             <line x1="140" y1="20" x2="140" y2="50"/>
             <line x1="60" y1="20" x2="60" y2="230"/>
             <line x1="20" y1="230" x2="100" y2="231"/> 
-            <!-- Non-living person -->
+            <!-- A head -->
             <circle cx="140" cy=70 r="20"  class="figure-part"/>
             <!-- Body -->
             <line x1="140" y1="90" x2="140" y2="150" class="figure-part"/> 
@@ -27,8 +27,33 @@
             <line x1="140" y1="150" x2="120" y2="180" class="figure-part"/> 
             <line x1="140" y1="150" x2="160" y2="180" class="figure-part"/> 
         </svg>
+        <div class="wrong-letters-container">
+            <div id="wrong-letters">
+                <p>Wrong</p>
+                <span>e,r,t,y</span>
+            </div>
+        </div>
+        <div class="word" id="word">
+            <div class="letter">h</div>
+            <div class="letter">e</div>
+            <div class="letter">l</div>
+            <div class="letter">l</div>
+            <div class="letter">o</div>
+        </div>
     </div>
 
+    <!-- Container for final message -->
+    <div class="popup-container" id="popup-container">
+        <div class="popup">
+            <h2 id="final-message">YOU WON</h2>
+            <button id="play-button">Play Again</button>
+        </div>
+    </div>
+
+    <!-- Notification about using letter -->
+    <div class="notification-container" id="notification-container">
+        <p>You have already entered this letter.</p>
+    </div>
     <script src="assets/script.js"></script>
 </body>
 </html>
