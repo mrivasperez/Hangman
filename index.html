@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Hangman Game</h1>
-    <p>The classic word game in which you must guess as many secret words as you can before time runs out!</p>
+    <p>Can you figure out the word?</p>
     <div class="game-container">
         <svg height="250" width="200" class="figure-container">
             <!-- Stand -->
@@ -28,30 +28,21 @@
             <line x1="140" y1="150" x2="160" y2="180" class="figure-part"/> 
         </svg>
         <div class="wrong-letters-container">
-            <div id="wrong-letters">
-                <p>Wrong</p>
-                <span>e,r,t,y</span>
-            </div>
+            <div id="wrong-letters"></div>
         </div>
-        <div class="word" id="word">
-            <div class="letter">h</div>
-            <div class="letter">e</div>
-            <div class="letter">l</div>
-            <div class="letter">l</div>
-            <div class="letter">o</div>
-        </div>
+        <div class="word" id="word"></div>
     </div>
 
     <!-- Container for final message -->
     <div class="popup-container" id="popup-container">
         <div class="popup">
-            <h2 id="final-message">YOU WON</h2>
+            <h2 id="final-message"></h2>
             <button id="play-button">Play Again</button>
         </div>
     </div>
 
     <!-- Notification about using letter -->
-    <div class="notification-container" id="notification-container">
+    <div class="notification-container show" id="notification-container">
         <p>You have already entered this letter.</p>
     </div>
     <script src="assets/script.js"></script>
